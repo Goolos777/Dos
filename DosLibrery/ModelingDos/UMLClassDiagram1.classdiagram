@@ -45,6 +45,21 @@
         <classMoniker Id="48a7e112-5c30-4f64-9ff3-7f80ed451703" LastKnownName="Element" />
       </annotatedElements>
     </comment>
+    <comment Id="36d86154-7f5b-45b0-a42a-bac2cf08c572">
+      <elementDefinition Id="4ca9c79a-4c0d-4d9c-81fe-8548e3cd91c4" />
+      <body>показать элемент получив к нему доступ через динам. полиморф.</body>
+      <annotatedElements>
+        <classMoniker Id="1f6b83c3-7183-4184-af06-7f2259b47bdc" LastKnownName="ShowElementVisitor" />
+      </annotatedElements>
+    </comment>
+    <comment Id="4565be81-47fa-48c1-a4e5-08c2facf11d8">
+      <elementDefinition Id="aafaea9f-be74-4338-ac4a-18c6ef570be9" />
+      <body>сохранить элемент получив к нему доступ через динам. полиморф.
+</body>
+      <annotatedElements>
+        <classMoniker Id="a0a1d7d3-7c6b-491c-8a86-1875ef3898d6" LastKnownName="SaveXMLVisitor" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="63e3aa62-daf8-4063-9238-b35f9553c61a" name="namespace" profile="CSharpProfile">
@@ -219,6 +234,9 @@
           <operation Id="a9260ca7-fde5-4f7e-83c9-2d5114aa4b05" name="vector&lt;Element&gt;getElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="39a17f20-68b0-43bc-8476-a33ef4935571" />
           </operation>
+          <operation Id="865016ac-5a6d-402b-8000-4580f1ad711f" name="metodFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7ec00ba-cddb-4371-86a0-b8abcfd04ef4" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -293,6 +311,9 @@
           </operation>
           <operation Id="65b04f31-1791-4233-8f99-1ddd79f5e01c" name="vector&lt;Element&gt;getElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="3e09e9dc-aebe-4c05-83be-cfb4d043fdba" />
+          </operation>
+          <operation Id="181d0b1f-8bec-44bf-a75c-30d9ae418c07" name="metodFolder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6516fc5-6e98-43ba-83ad-3988a5595605" />
           </operation>
         </ownedOperationsInternal>
       </class>
