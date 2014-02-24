@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{502D5431-666C-42A9-852F-5DBEB6C6123A}</ProjectGuid>
+    <ProjectGuid>{FCCA992C-BE32-4C35-B346-A66402B35EBE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DosLibrery</RootNamespace>
+    <RootNamespace>GoogleTest</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,7 +39,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\googleTest\gtest-1.7.0\include;D:\googleTest\gtest-1.7.0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
@@ -76,10 +79,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyDos.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="MyDos.cpp" />
+    <ClCompile Include="..\..\..\..\googleTest\gtest-1.7.0\src\gtest-all.cc" />
+    <ClCompile Include="..\..\..\..\googleTest\gtest-1.7.0\src\gtest_main.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
