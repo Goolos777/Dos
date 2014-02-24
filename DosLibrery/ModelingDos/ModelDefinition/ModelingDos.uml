@@ -1,8 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="d6b0b841-5e44-4b26-a8e9-bf9ffb9437de"
   name="ModelingDos" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="d5c1d055-c486-4827-922a-0d09633287ab">
+      <body>call program
+format command:
+dos &lt;path&gt; &lt;file.name&gt;</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="06f96092-649b-4568-a2de-e454fe18a6f4"
+          LastKnownName="Save File System"
+          LastKnownLocation="ModelingDos.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f1cd1792-9be7-46db-9006-c05e8367f076">
+      <body>call program
+format command:
+dos &lt;file.name&gt;
+
+or
+navigation in the program
+cd &lt;folder name&gt;
+/cd..
+
+cls - clean screen
+
+exit - exit to program</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="8cd272ba-23fd-43b5-9658-d518c24aba53"
+          LastKnownName="Show File System"
+          LastKnownLocation="ModelingDos.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="477c5793-91b1-43cd-aaca-73f30032b895">
+      <body>switch  sort</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="8937b5e0-1c50-4397-921b-f55c112b0f9c"
+          LastKnownName="case format show"
+          LastKnownLocation="ModelingDos.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="57d79045-4e9c-4509-a731-841ae262f33f">
+      <body>switch  output</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="0df8e8b3-acf8-4721-8c8f-c46bd9502f53"
+          LastKnownName="case format show"
+          LastKnownLocation="ModelingDos.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d31fadb1-24e5-427f-a27f-bf62c843cc20">
+      <body>files attributes:
+size
+ext
+read only
+data create
+folder attributes:
+read only</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="917d56cd-7257-40c1-9e46-61d776e5d0f3"
+          LastKnownName="Read directory File System"
+          LastKnownLocation="ModelingDos.uml" />
+        <useCaseMoniker
+          Id="3907c1f0-db7b-41cd-b5fa-547e4bf82287"
+          LastKnownName="Write  directory Files System to *.xml files"
+          LastKnownLocation="ModelingDos.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -21,33 +96,26 @@
     <packageHasNamedElement>
       <actor
         Id="37e2e75b-11fe-4c4f-85a5-77c163b30417"
-        name="Actor1"
-        isAbstract="false"
-        isLeaf="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
-        Id="a6a66cc8-91cf-4c64-b424-043baceff225"
-        name="UseCase1"
+        name="USER"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
           <association
-            Id="b34c7576-5613-4456-9585-0f792b395d44"
+            Id="00cb2ae2-9fff-4c2a-af6a-5a2236a581bb"
             isDerived="false"
-            sourceEndRoleName="UseCase1"
-            targetEndRoleName="Actor1"
+            sourceEndRoleName="USER"
+            targetEndRoleName="call program"
             isLeaf="false"
             isAbstract="false">
-            <actorMoniker
-              Id="37e2e75b-11fe-4c4f-85a5-77c163b30417"
-              LastKnownName="Actor1"
+            <useCaseMoniker
+              Id="4a4f36b3-27b4-4f6e-8ce9-edb1fe16e3d7"
+              LastKnownName="call program"
               LastKnownLocation="ModelingDos.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0af0897b-dd86-41b9-bcf1-e5453d9ecfd5"
-                  name="UseCase1"
+                  Id="e9ade4b7-02d3-4b26-92e2-1c8dda58dfd8"
+                  name="USER"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -59,8 +127,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ce3bf123-bce0-46e6-ac5b-65443e823032"
-                  name="Actor1"
+                  Id="995432b6-7873-43d6-9d52-b96dabfc2e2b"
+                  name="call program"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -72,7 +140,14 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-      </useCase>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6a66cc8-91cf-4c64-b424-043baceff225"
+        name="Create  *.xml files"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <artifact
@@ -80,6 +155,345 @@
         name="Artifact1"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9c357322-c265-4d43-bb43-a850a2dcac1a"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="958d8cab-5933-47ac-af9f-780a1477fc0b"
+        name="Read  *.xml   file"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3907c1f0-db7b-41cd-b5fa-547e4bf82287"
+        name="Write  directory Files System to *.xml files"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="17b51829-fb86-4788-a750-3031af132f01"
+        name="windows"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9d41ed3-94bf-4992-9207-67a571279d50"
+        name="Show *.xml  files"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9919fe6b-7bbc-4fe1-a16b-7c4fa1713bef"
+        name="Greate File System"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ebe9769b-7259-45ba-9bf7-d6e4837edd47"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="917d56cd-7257-40c1-9e46-61d776e5d0f3"
+        name="Read directory File System"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="06f96092-649b-4568-a2de-e454fe18a6f4"
+        name="Save File System"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="54918de7-f823-4e83-be45-53f5a420b70b">
+            <useCaseMoniker
+              Id="a6a66cc8-91cf-4c64-b424-043baceff225"
+              LastKnownName="Create  *.xml files"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+          <include
+            Id="b4d4a619-66f3-4bca-8b81-c9e81b7f7733">
+            <useCaseMoniker
+              Id="917d56cd-7257-40c1-9e46-61d776e5d0f3"
+              LastKnownName="Read directory File System"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+          <include
+            Id="ea4facfb-a073-4725-8c45-36eea7ea39eb">
+            <useCaseMoniker
+              Id="3907c1f0-db7b-41cd-b5fa-547e4bf82287"
+              LastKnownName="Write  directory Files System to *.xml files"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8cd272ba-23fd-43b5-9658-d518c24aba53"
+        name="Show File System"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7b36cec5-3097-4eab-bf84-e956fb469e74">
+            <useCaseMoniker
+              Id="958d8cab-5933-47ac-af9f-780a1477fc0b"
+              LastKnownName="Read  *.xml   file"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+          <include
+            Id="baae7ad7-da2e-47ea-8eb8-7fd8ee02319b">
+            <useCaseMoniker
+              Id="f9d41ed3-94bf-4992-9207-67a571279d50"
+              LastKnownName="Show *.xml  files"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+          <include
+            Id="16bfce96-d1e6-45ee-9e85-42d06c414ed7">
+            <useCaseMoniker
+              Id="be83cf86-616e-4929-86c1-b58c77359843"
+              LastKnownName="Format   visa    "
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="be83cf86-616e-4929-86c1-b58c77359843"
+        name="Format   visa    "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8937b5e0-1c50-4397-921b-f55c112b0f9c"
+        name="case format show"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="941871fd-6417-4735-8a3b-66639ccbdc74">
+            <useCaseMoniker
+              Id="be83cf86-616e-4929-86c1-b58c77359843"
+              LastKnownName="Format   visa    "
+              LastKnownLocation="ModelingDos.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5cc25f26-34a8-4e95-a605-15979fb41de8"
+        name="case format write"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="729d2981-8f7a-4ea4-9a35-e1dc8c7ef557">
+            <useCaseMoniker
+              Id="3907c1f0-db7b-41cd-b5fa-547e4bf82287"
+              LastKnownName="Write  directory Files System to *.xml files"
+              LastKnownLocation="ModelingDos.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="ab708fce-493a-4879-a426-913b71c18859"
+        name="windows"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0df8e8b3-acf8-4721-8c8f-c46bd9502f53"
+        name="case format show"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8d3f273f-b925-4154-8cbe-848780c17428">
+            <useCaseMoniker
+              Id="f9d41ed3-94bf-4992-9207-67a571279d50"
+              LastKnownName="Show *.xml  files"
+              LastKnownLocation="ModelingDos.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a4f36b3-27b4-4f6e-8ce9-edb1fe16e3d7"
+        name="call program"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6548e162-878b-4885-a9a3-e53782ca322d"
+            isDerived="false"
+            sourceEndRoleName="call program"
+            targetEndRoleName="USER"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="37e2e75b-11fe-4c4f-85a5-77c163b30417"
+              LastKnownName="USER"
+              LastKnownLocation="ModelingDos.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a4eba10-26a2-4185-9e51-4bae2e949bd7"
+                  name="call program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fb5cd51-7a18-4f37-b571-ad2091e2b52f"
+                  name="USER"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="e4ec212a-41f1-4ef1-9c9d-efeae21d66bd">
+            <useCaseMoniker
+              Id="06f96092-649b-4568-a2de-e454fe18a6f4"
+              LastKnownName="Save File System"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+          <include
+            Id="3d5bf287-677b-4054-9e59-83cd3cda286f">
+            <useCaseMoniker
+              Id="8cd272ba-23fd-43b5-9658-d518c24aba53"
+              LastKnownName="Show File System"
+              LastKnownLocation="ModelingDos.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="de5cf56b-d39f-4844-94d6-4ac9b8a8abc6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="943646d6-0571-41ba-8bcc-7a97699ad6d6"
+            name="FileName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c1366f2f-2bd0-412e-a1f1-292c154d895a"
+            name="Attribute2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eaeee443-29da-4eeb-ae1a-9579a3b4c61e"
+            name="Attribute3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c72db6ab-9a0d-4532-be52-bd661be29d60"
+            name="Operation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6deb51b8-dbbb-4425-a5ba-a53fe6c3a81b"
+            name="Operation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4ebdb7b5-74d0-4d99-b771-1df459d0765d"
+            name="Operation3"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="7fe99515-3ba8-415a-ab0b-88cf10fb421b"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="55926d10-b1c6-490a-bd41-2bc59a05feb8"
+            name="SIZE" />
+          <enumerationLiteral
+            Id="eb6c2430-8d81-44c8-8e68-4ccab888595a"
+            name="Extended" />
+          <enumerationLiteral
+            Id="ce72f273-2e4e-46f2-9974-ffda316dffbd"
+            name="ReadOnly" />
+          <enumerationLiteral
+            Id="e677f601-ecae-4714-8413-908c1265eb90"
+            name="DataGreate" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
