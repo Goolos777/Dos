@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="33d0d1db-c2d6-4599-9be5-c0cc9f946d75" name="UMLUseCaseDiagram1" linkedPackageId="12c3ee4d-e285-4fdb-a4bf-ff108da3676d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="33d0d1db-c2d6-4599-9be5-c0cc9f946d75" name="UMLUseCaseDiagram1" linkedPackageId="12c3ee4d-e285-4fdb-a4bf-ff108da3676d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="6e923fdc-1ea2-4eed-aed6-917cbeed8e08">
       <elementDefinition Id="d5c1d055-c486-4827-922a-0d09633287ab" />
@@ -57,26 +57,114 @@ read only</body>
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="e19aaec5-c3a1-4f21-9a5d-184ef32f6eb7" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="cae0b6ad-cd83-48bd-8f46-7d844067ff5d" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8d3932d2-1e0c-4dc8-90d6-c7eff4dd121c">
+          <propertyInstance Id="43bd7d3e-b838-4eb7-808a-8ab33ab42f9a" name="BaseName">
+            <elementDefinition Id="b86ff179-61bf-4d8f-b992-1165317df607" />
+          </propertyInstance>
+          <elementDefinition Id="4dc1de27-27a8-4eee-8046-9900dd078057" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3ce36c3f-ca4b-4767-b019-d6a26673cebd">
+          <propertyInstance Id="1024ae76-89bb-4a2a-8a95-7a1d0c84a32a" name="ClrAttributes">
+            <elementDefinition Id="c7ffe74b-a5c6-44e8-8cef-14bd0648daf9" />
+          </propertyInstance>
+          <elementDefinition Id="564ad290-1a3f-4ed5-b08b-174b74274d91" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a5d4b12b-79aa-467c-b88f-013d8c94261d">
+          <propertyInstance Id="c597ecfc-348f-4c1b-a720-a5ef1aa1f17f" name="Usings">
+            <elementDefinition Id="4fa97230-0c1d-456d-9159-213d4b119e16" />
+          </propertyInstance>
+          <elementDefinition Id="ce20fb3c-2d63-490b-9755-ce9acd567cc8" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="bd6e4945-8e8a-4fc3-8738-1464c8a3f6c5" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="74da27ab-0b3f-42e6-88db-bf7bd8724adb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1984e8cd-f016-4906-8b1f-24ebcc359be8">
+          <propertyInstance Id="9e98f245-1bc5-43d2-ae17-111aa68b165e" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="afac0f17-ec37-4ad3-8929-a986efee04f4" />
+          </propertyInstance>
+          <elementDefinition Id="59fe2bb7-667d-4b02-932f-6bd8858603a8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="3daab732-c8de-4d5e-92a5-55fb4961b8ad">
+          <propertyInstance Id="96942eef-31f2-47f8-9530-9392638f5f80" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="f6504abc-c6ff-4ca4-a83c-d3c667d81180" />
+          </propertyInstance>
+          <elementDefinition Id="79559314-786f-4676-8d33-2e0af20da64c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="cc9dc8d4-42d8-4ddc-a79a-24e1b9f01a4e">
+          <propertyInstance Id="b7bf38b9-13ee-4731-aba9-10a08e1c70a4" name="ProjectPath" value="ClassTemplate=..\ModelingDosLib\ModelingDosLib.csproj|EnumTemplate=..\ModelingDosLib\ModelingDosLib.csproj|InterfaceTemplate=..\ModelingDosLib\ModelingDosLib.csproj|StructTemplate=..\ModelingDosLib\ModelingDosLib.csproj">
+            <elementDefinition Id="e662602c-69d9-4218-adc5-8130a22ea725" />
+          </propertyInstance>
+          <elementDefinition Id="be85673c-4daa-47be-a15d-518412e7f885" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e7cb8770-360e-4498-b6b3-19e740fad52d">
+          <propertyInstance Id="5bdea395-0045-472e-9259-ee79b74bee79" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="050dbfdf-5be0-4ff3-b505-5d4295b69abf" />
+          </propertyInstance>
+          <elementDefinition Id="e60657c4-648d-4191-ac65-445b0e0f0822" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="83732fe1-683b-443e-a1dd-108f5e3043f2">
+          <propertyInstance Id="03543609-fd40-40f3-939a-d9d906f0e916" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="4a12e24a-21eb-4c41-ad6a-e5fc71fd3142" />
+          </propertyInstance>
+          <elementDefinition Id="42673881-5e87-403b-8026-2ce5fcaf2fc0" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f3d42390-e0b6-4a74-9b41-3bca2ce93c5d">
+          <propertyInstance Id="c9e6cc8e-fd8e-49aa-aa80-8f874c0d18ea" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="569016bd-425b-4ab1-9f69-c25a2c7fbd9c" />
+          </propertyInstance>
+          <elementDefinition Id="85f883a2-3e39-4dd3-bf28-51193c911ea7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="79402039-d675-4d40-b749-23ecb159a45a">
+          <propertyInstance Id="27afa17d-4ffe-4d37-85fd-643220032d19" name="Parameters">
+            <elementDefinition Id="e8bae388-316e-4d63-b75c-27326c321b2f" />
+          </propertyInstance>
+          <elementDefinition Id="45c77318-c478-4249-996b-1454fa00f575" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="b2a7d554-1706-4891-9c81-7583957c5918" name="USER" isAbstract="false" isLeaf="false">
         <elementDefinition Id="37e2e75b-11fe-4c4f-85a5-77c163b30417" />
         <targetEnds>
-          <association Id="9b57a215-de1f-4813-8663-937f6b3201ee" isDerived="false" sourceEndRoleName="USER" targetEndRoleName="call program" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="23c0c2f1-e764-42ee-9d7c-09d3995c112e" LastKnownName="call program" />
+          <association Id="a1c2b898-8770-47ce-bb71-8980d1441a6b" isDerived="false" sourceEndRoleName="USER" targetEndRoleName="Save File System" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cf696a35-654a-4bc9-b095-64e1203e0b98" LastKnownName="Save File System" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="39d02e6e-e8a2-4306-8c2f-d960e0b63f41" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e9ade4b7-02d3-4b26-92e2-1c8dda58dfd8" />
+                <memberEnd Id="13f6bd5d-3522-4e84-a4b3-5c78ebac70f8" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="62ecb61c-60a9-43a3-ad11-ecded482f492" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="64a11276-b281-4e1e-b9ae-97ec60415f9b" name="call program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="995432b6-7873-43d6-9d52-b96dabfc2e2b" />
+                <memberEnd Id="1509525d-1cd7-4a62-bfa8-f465d9752243" name="Save File System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8cbe7d8e-e82c-41d1-8849-0e9158d791cc" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="00cb2ae2-9fff-4c2a-af6a-5a2236a581bb" />
+            <elementDefinition Id="7825055a-5ce1-4611-83fb-f8e2bda9a1dc" />
+          </association>
+          <association Id="7be95120-7a30-44e7-8d2a-1a7051cc8f1e" isDerived="false" sourceEndRoleName="USER" targetEndRoleName="Show File System" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e903c906-c538-41ee-996d-cd2040ce5df3" LastKnownName="Show File System" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cdfc001b-5c38-4944-ab72-2382657f9ff0" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e6c4091c-b8b0-4b6b-a0d7-ece91a37c926" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="562161f9-7e16-4532-a9b2-927d4c2138f3" name="Show File System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a51f7234-8ca5-4dcf-b4aa-ca5fc94e8576" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="638f78e7-dd31-45b7-8eb8-32f13f44727e" />
           </association>
         </targetEnds>
       </actor>
@@ -109,6 +197,24 @@ read only</body>
     <useCaseModelRootHasTypes>
       <useCase Id="cf696a35-654a-4bc9-b095-64e1203e0b98" name="Save File System" isAbstract="false" isLeaf="false">
         <elementDefinition Id="06f96092-649b-4568-a2de-e454fe18a6f4" />
+        <targetEnds>
+          <association Id="44ecb885-1d3b-4bc2-9f10-d099afe032cb" isDerived="false" sourceEndRoleName="Save File System" targetEndRoleName="USER" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="b2a7d554-1706-4891-9c81-7583957c5918" LastKnownName="USER" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50f6bedc-b638-431b-b029-79ae1c473877" name="Save File System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="99174709-243d-472b-a1d9-054b7a9fff3c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b56091c6-d1e7-4bf7-841c-c7d6510524a2" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac22ccab-ece7-40b5-8518-e11d11a6a8bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d7ecd0eb-decd-45d9-8f23-1597aa73296b" />
+          </association>
+        </targetEnds>
         <additions>
           <include Id="7a8793b6-928f-4d81-aad6-1fb1c623c2d4">
             <useCaseMoniker Id="dfb5f670-de2c-45b7-bb40-f4dc813add78" LastKnownName="Create  *.xml files" />
@@ -128,6 +234,24 @@ read only</body>
     <useCaseModelRootHasTypes>
       <useCase Id="e903c906-c538-41ee-996d-cd2040ce5df3" name="Show File System" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8cd272ba-23fd-43b5-9658-d518c24aba53" />
+        <targetEnds>
+          <association Id="ab1f70d4-6d07-486f-9899-08f5956b3d8b" isDerived="false" sourceEndRoleName="Show File System" targetEndRoleName="USER" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="b2a7d554-1706-4891-9c81-7583957c5918" LastKnownName="USER" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81bbb865-6c89-492a-9ff4-4d44ef46e276" name="Show File System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1bcea53c-c03d-4516-a93c-f93d050b493c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5db57060-e34a-4793-ad49-38b7f0af2256" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6d0dabdc-ad96-40a4-af88-22a9e05eb041" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e675559f-aab0-426c-af34-3d19d39d3896" />
+          </association>
+        </targetEnds>
         <additions>
           <include Id="035ebe3d-9483-41a2-a515-72f4aa90ff76">
             <useCaseMoniker Id="a4c477f5-bcf9-4352-803b-2015b9e6cefa" LastKnownName="Read  *.xml   file" />
@@ -171,39 +295,6 @@ read only</body>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="23c0c2f1-e764-42ee-9d7c-09d3995c112e" name="call program" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="4a4f36b3-27b4-4f6e-8ce9-edb1fe16e3d7" />
-        <targetEnds>
-          <association Id="c682a64c-e5cd-43a6-9f16-6370e39ede02" isDerived="false" sourceEndRoleName="call program" targetEndRoleName="USER" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="b2a7d554-1706-4891-9c81-7583957c5918" LastKnownName="USER" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="59584713-c231-44e0-96cf-b9e1c9890822" name="call program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1a4eba10-26a2-4185-9e51-4bae2e949bd7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a3058c0e-75f1-4e35-b9bc-e15337b307de" name="USER" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="6fb5cd51-7a18-4f37-b571-ad2091e2b52f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="6548e162-878b-4885-a9a3-e53782ca322d" />
-          </association>
-        </targetEnds>
-        <additions>
-          <include Id="d9fb2814-4040-4a81-b72a-e3e2d55c7c56">
-            <useCaseMoniker Id="cf696a35-654a-4bc9-b095-64e1203e0b98" LastKnownName="Save File System" />
-            <elementDefinition Id="e4ec212a-41f1-4ef1-9c9d-efeae21d66bd" />
-          </include>
-          <include Id="e80bf408-1b1f-47a7-aa92-4bed54abd6a4">
-            <useCaseMoniker Id="e903c906-c538-41ee-996d-cd2040ce5df3" LastKnownName="Show File System" />
-            <elementDefinition Id="3d5bf287-677b-4054-9e59-83cd3cda286f" />
-          </include>
-        </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="12c3ee4d-e285-4fdb-a4bf-ff108da3676d" name="ModelingDos">
     <elementDefinition Id="d6b0b841-5e44-4b26-a8e9-bf9ffb9437de" />
@@ -219,6 +310,18 @@ read only</body>
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a196d10d-9869-4b72-976a-aeb14feaaff3">
+        <profileInstance Id="dde2a3d9-809b-4ef0-81f5-ad932d6211ff" name="CSharpProfile">
+          <elementDefinition Id="c002606e-ba93-42d3-b833-19b31df57579" />
+        </profileInstance>
+        <elementDefinition Id="dbf2eeae-7c0e-4771-8426-d13bd9c3cd64" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d5baf537-0d59-4504-aae2-7ca5c24f9324">
+        <profileInstance Id="3900498c-eb3d-4c28-b2c5-6bdcdfe8d838" name="TextTemplateBindings">
+          <elementDefinition Id="a0d6dbbb-e186-435d-ac6d-649239f2e534" />
+        </profileInstance>
+        <elementDefinition Id="0eeebfa7-8279-4672-a5e0-833185bb4b81" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
