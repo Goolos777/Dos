@@ -76,10 +76,18 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyDos.h" />
+    <ClInclude Include="Bilder.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Forder.h" />
+    <ClInclude Include="FSElement.h" />
+    <ClInclude Include="ShowTree.h" />
+    <ClInclude Include="XMLManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyDos.cpp" />
+    <ClCompile Include="Bilder.cpp" />
+    <ClCompile Include="FSElement.cpp" />
+    <ClCompile Include="ShowTree.cpp" />
+    <ClCompile Include="XMLManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
