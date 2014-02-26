@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
-#include "Bilder.h"
-#include "ShowTree.h"
-#include "XMLManager.h"
+
+
+
 class ConsolCommander
 {
 	std::string fileName;
