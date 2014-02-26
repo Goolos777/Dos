@@ -4,8 +4,8 @@ class File : public FSElement
 {
 	long filesize;
 public:
-	File(bool readOnly, std::wstring name, long SIZE) :
-		filesize(SIZE), FSElement(readOnly, name){};
+	File(bool readOnly, std::wstring name, long SIZE, FSElement *up) :
+		filesize(SIZE), FSElement(readOnly, name, up){};
 
 	
 	virtual void SetSIZE(long size){ filesize = size; }

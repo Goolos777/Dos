@@ -10,12 +10,11 @@
 
 class Bilder
 {
-
-
+	FSElement* root;
 	void create(FSElement* element);
 public:
-	Bilder(std::string fileName , std::string path) ;
-	FSElement* Create();
+	Bilder(wstring path);
+	FSElement* Create(){return root;}
 	~Bilder();
 };
 

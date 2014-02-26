@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <string>
+
 using namespace std;
 class FSElement
 {
@@ -9,7 +10,7 @@ class FSElement
 	wstring mName;
 	FSElement *upFSElement;
 public:
-	FSElement(const bool readOnly, const wstring& name, FSElement *up = nullptr)
+	FSElement(const bool readOnly, const wstring& name, FSElement *up)
 		:mReadOnly(readOnly), mName(name),upFSElement(up) {};
 	
 	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
