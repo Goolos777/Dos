@@ -9,8 +9,10 @@ class FSElement
 	bool mReadOnly;
 	wstring mName;
 	FSElement *upFSElement;
+	bool isFolder;
+	
 public:
-	FSElement(const bool readOnly, const wstring& name, FSElement *up)
+	FSElement(const bool readOnly, bool isFolder, const wstring& name, FSElement *up)
 		:mReadOnly(readOnly), mName(name),upFSElement(up) {};
 	
 	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
@@ -19,10 +21,10 @@ public:
 	
 	
 	virtual void AddFSElement(FSElement* element);
-	virtual const FSElement* GetFolder();
+	virtual vector<FSElement*>& GetFilesSystem();
 	void SetUpFSElement(FSElement *up){ upFSElement = up; }
 	virtual const FSElement* GetUpFSElement(){ return upFSElement; }
-
+	bool GetisFolder(){ return isFolder; }
 	virtual bool GetReadOnly(){ return mReadOnly; }
 	virtual const wstring& GetName(){ return mName; }
 	virtual const long& GetSIZE();

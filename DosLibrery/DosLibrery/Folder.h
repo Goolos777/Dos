@@ -2,16 +2,16 @@
 #include "FSElement.h"
 #include <string>
 
+using namespace std;
 
 class Folder :	public FSElement
 {
-	std::vector<const FSElement*>filesSystem;
+	vector<FSElement*>filesSystem;
 public:
-	Folder(bool readOnly, std::wstring name, FSElement *up) : FSElement(readOnly, name, up)
+	Folder(bool readOnly, bool isFolder, std::wstring name, FSElement *up) : FSElement(readOnly, isFolder, name, up)
 												{ std::vector<const FSElement*>filesSystem; };
-	virtual void AddFSElement(const FSElement& element);
-	virtual const FSElement* GetFolder();
-
+	virtual void AddFSElement(FSElement& element);
+	virtual vector<FSElement*>& GetFilesSystem(){ return filesSystem; }
 	virtual ~Folder(){};
 };
 
