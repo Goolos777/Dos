@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="9ce21c48-9348-46c9-9815-36d1b3c34c00" name="UMLClassDiagram2" linkedPackageId="f0636c16-2fb9-4613-ab00-ec4c3df2c820" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="aa7fa2a7-6939-4928-9266-429efec4e02b">
-      <elementDefinition Id="146d46f8-36ce-4d8d-ba6e-4d0bd6836304" />
-      <body>Сортирует массив и выводит на экран.</body>
-      <annotatedElements>
-        <classMoniker Id="7c7c67f1-32cc-4bd5-8667-a8640c4ea5dc" LastKnownName="ShowTree1" />
-      </annotatedElements>
-    </comment>
-  </ownedCommentsInternal>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="9ce21c48-9348-46c9-9815-36d1b3c34c00" name="UMLClassDiagram2" linkedPackageId="f0636c16-2fb9-4613-ab00-ec4c3df2c820" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="53a32ecb-128b-4c4b-8049-8c5f3cd218cf" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="cae0b6ad-cd83-48bd-8f46-7d844067ff5d" />
@@ -81,54 +72,10 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="902cf5f6-d7f4-4c11-8768-5cf3e1c826b9">
-      <profileInstance Id="c397dc4b-c280-4e12-aefa-85f297a33e0d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0e21459b-b548-411e-a8cc-f28051aca962">
-      <profileInstance Id="2de587cd-99b0-4f02-bafa-bfd99b7ed72b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c75dad44-8707-485f-9c8e-d04cacae8b05">
-      <profileInstance Id="48b75cfd-c680-419e-aa29-ea21b6854cf7" name="CSharpProfile">
-        <elementDefinition Id="c002606e-ba93-42d3-b833-19b31df57579" />
-      </profileInstance>
-      <elementDefinition Id="dbf2eeae-7c0e-4771-8426-d13bd9c3cd64" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="dd52d3a0-a124-41d8-8bd8-6066dfa3a1f5">
-      <profileInstance Id="bd87a324-6802-407e-95af-30950b04b23c" name="TextTemplateBindings">
-        <elementDefinition Id="a0d6dbbb-e186-435d-ac6d-649239f2e534" />
-      </profileInstance>
-      <elementDefinition Id="0eeebfa7-8279-4672-a5e0-833185bb4b81" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="62eaafe3-8c8c-438f-83f5-db17a066f970" name="Bilder1" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2029449f-fef4-4286-9938-934dbb3c89f7" />
-        <targetEnds>
-          <association Id="43ea2aea-c4ec-411c-8861-f1ab608923c6" isDerived="false" sourceEndRoleName="Bilder1" targetEndRoleName="ConsolCom" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7757e87f-a279-441b-bcf5-4a088174568b" LastKnownName="ConsolCom" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2178bc93-aa0a-461f-aefe-f0a15b0c1472" name="Bilder1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5fda6e00-17f1-41cc-b08e-dba9f955e501" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e1871fe3-1b79-4990-bd52-e16dca63dc10" name="ConsolCom" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="4e2725e2-3a57-42ab-874f-74cb3065a278" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="290120c5-1b68-4bd3-9e49-26a61e758c70" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="cddb08a2-b408-4570-9591-2b03656e1da2" name="Element create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="dbb35eb8-2c01-409e-8fab-d80270b1f848" />
@@ -149,11 +96,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="54be2099-eaa5-4d48-9949-df10dc4db871" name="FS Element" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8e74a673-65df-4950-b05e-0552bb8e997c" />
-        <ownedAttributesInternal>
-          <property Id="b324ca3e-8d76-41d0-8f01-3273a75a5876" name="vector &lt;Element&gt;filesSystem" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d81fd6a8-a6ea-48d9-9bc6-58bfbacd4e25" />
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="24a55c82-e3ea-4586-a500-4dc65e0d5012" name="addElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c95ee0f6-df79-4456-a083-fab2a7097893" />
@@ -175,7 +117,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="df53c839-e8e5-46ac-84ab-071d8a5aced7" name="File1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="df53c839-e8e5-46ac-84ab-071d8a5aced7" name="File" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="70507890-078c-4217-bcdc-06f58ace6b41" />
         <generalsInternal>
           <generalization Id="aaceed22-c81c-422f-830a-0a7ce94892b9" isSubstitutable="false">
@@ -199,6 +141,9 @@
           <property Id="a37c23be-8cc7-4df8-aca2-d49b2a4e383b" name="unsignet int SIZE" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="fdeb189d-8f63-43f4-a567-9aa38ed74b5c" />
           </property>
+          <property Id="70fb66c9-acee-4de6-922f-80f41224d666" name="vector &lt;FSElement&gt;filesSystem1" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2021c904-5911-499e-8578-d0aea50dfac5" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="f6714c4b-1ace-4315-b54c-29f0eb8a362a" name="addElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -211,9 +156,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="03d7195b-7d15-4bd7-a2a6-f34c2938f58d" name="vector&lt;FSElement&gt;getElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4cbdc510-a86c-4cb3-9047-028dda6a0a67" />
-          </operation>
           <operation Id="cea0a50f-c5ae-4216-a46c-03912a9d4f62" name="metodFolderFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="bce6c62d-6320-4d08-9a87-86c452b5bec0" />
           </operation>
@@ -221,7 +163,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="4cad837f-e26d-4158-a626-64194d03fef2" name="Folder1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="4cad837f-e26d-4158-a626-64194d03fef2" name="Folder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="9268204b-9bec-45d0-b0e4-3de3791fb0e1" />
         <generalsInternal>
           <generalization Id="b7e9cd82-0ac2-45ac-a383-35ba277167bb" isSubstitutable="false">
@@ -264,8 +206,8 @@
           <property Id="4f512d26-b6dc-418d-afea-02428563450b" name="string name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="15766e21-5680-428a-8009-1196546997bb" />
           </property>
-          <property Id="f70d5c87-a84d-4a37-8415-793f0bad9104" name="vector &lt;Element&gt;filesSystem" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8c264b75-c2fe-4bc6-8e73-0bb446257aed" />
+          <property Id="bf1dae30-349b-4e60-8bab-ffa5623a7b6e" name="vector &lt;FSElement&gt;filesSystem" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f3a75d5f-7725-4437-bf3f-fc9d2a3c1432" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -291,24 +233,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="d0b954c4-670f-42b4-9290-548a5932975f" name="XMLManager1" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="221812ef-875e-4f52-a21b-14f7a84b5da3" />
-        <targetEnds>
-          <association Id="fe91d9e1-e733-4d6a-a194-111498e77482" isDerived="false" sourceEndRoleName="XMLManager1" targetEndRoleName="ConsolCom" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7757e87f-a279-441b-bcf5-4a088174568b" LastKnownName="ConsolCom" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2d0d8dfd-e750-4765-be51-0b172b9ee7db" name="XMLManager1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5dbc9b03-1cfa-431d-b7d4-ade345d0dddb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="0ecda04a-2920-4bf3-ba53-d25b788ca69e" name="ConsolCom" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="fe5fb24a-5d09-47a4-8e68-d95bcf7ad2d0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="0025b35d-c970-405c-abc0-87d390350eec" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="b9b9a3ad-af3f-4787-86ad-e26401ba1c5a" name="XMLManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="d0515afd-814c-49ca-bf8e-460e24c997cc" />
@@ -339,24 +263,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="7c7c67f1-32cc-4bd5-8667-a8640c4ea5dc" name="ShowTree1" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2ae30362-6a71-44b7-bb34-7c7b87e536fe" />
-        <targetEnds>
-          <association Id="92792d65-d8fe-4807-b2d8-c554aa2c96fc" isDerived="false" sourceEndRoleName="ShowTree1" targetEndRoleName="ConsolCom" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7757e87f-a279-441b-bcf5-4a088174568b" LastKnownName="ConsolCom" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="c4c0fa91-29c5-47ea-a27e-dac342a0867c" name="ShowTree1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="c5292b52-92be-4f6f-b23c-07e5d7344abb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2e6b8ab3-c5cb-4997-b48e-c5401015c81e" name="ConsolCom" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="de3bd178-c269-464d-8600-86808139ee9b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5d3196ba-816a-4a7f-9dcd-5386dfaa7525" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="27d0e4fb-2664-497b-954d-0fdc749db30a" name="ShowTree" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="80057baf-239e-45e9-861a-4a29777206a0" />
@@ -401,8 +307,51 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2dcf2fa2-f129-4157-b415-424c2f0441fe" name="FSParser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dfbe1d71-06fc-445e-a561-903f5f25d9ad" />
+        <ownedOperationsInternal>
+          <operation Id="b9cc5707-4c6f-45f5-8b7b-bfa584b70116" name="scanFolder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11fcb970-2929-49dd-80b6-86f75cb41cb4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f907d783-1d87-4d07-810e-3ffc3828afde" name="string folder" direction="In" isUnique="false">
+                  <elementDefinition Id="e24c4c31-0b5a-4eac-a3f1-ac1fc4f0ccf3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="f0636c16-2fb9-4613-ab00-ec4c3df2c820" name="ModelingDos">
     <elementDefinition Id="d6b0b841-5e44-4b26-a8e9-bf9ffb9437de" />
+    <profileInstances>
+      <packageHasProfileInstances Id="902cf5f6-d7f4-4c11-8768-5cf3e1c826b9">
+        <profileInstance Id="c397dc4b-c280-4e12-aefa-85f297a33e0d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0e21459b-b548-411e-a8cc-f28051aca962">
+        <profileInstance Id="2de587cd-99b0-4f02-bafa-bfd99b7ed72b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c75dad44-8707-485f-9c8e-d04cacae8b05">
+        <profileInstance Id="48b75cfd-c680-419e-aa29-ea21b6854cf7" name="CSharpProfile">
+          <elementDefinition Id="c002606e-ba93-42d3-b833-19b31df57579" />
+        </profileInstance>
+        <elementDefinition Id="dbf2eeae-7c0e-4771-8426-d13bd9c3cd64" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dd52d3a0-a124-41d8-8bd8-6066dfa3a1f5">
+        <profileInstance Id="bd87a324-6802-407e-95af-30950b04b23c" name="TextTemplateBindings">
+          <elementDefinition Id="a0d6dbbb-e186-435d-ac6d-649239f2e534" />
+        </profileInstance>
+        <elementDefinition Id="0eeebfa7-8279-4672-a5e0-833185bb4b81" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

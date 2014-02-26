@@ -79,7 +79,7 @@
     <ClInclude Include="Bilder.h" />
     <ClInclude Include="ConsolCommander.h" />
     <ClInclude Include="File.h" />
-    <ClInclude Include="Forder.h" />
+    <ClInclude Include="Folder.h" />
     <ClInclude Include="FSElement.h" />
     <ClInclude Include="ShowTree.h" />
     <ClInclude Include="XMLManager.h" />
@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="Bilder.cpp" />
     <ClCompile Include="ConsolCommander.cpp" />
+    <ClCompile Include="Folder.cpp" />
     <ClCompile Include="FSElement.cpp" />
     <ClCompile Include="ShowTree.cpp" />
     <ClCompile Include="XMLManager.cpp" />

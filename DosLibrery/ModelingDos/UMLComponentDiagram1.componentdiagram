@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="67c93160-8342-4695-b831-de2d7c40ffe2" name="UMLComponentDiagram1" linkedPackageId="f3ad4280-6b07-45e2-9633-dd05fc5ed67d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="67c93160-8342-4695-b831-de2d7c40ffe2" name="UMLComponentDiagram1" linkedPackageId="f3ad4280-6b07-45e2-9633-dd05fc5ed67d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="73cb5b63-2c56-4b4b-9a8b-1d4ea43e7b46" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="cae0b6ad-cd83-48bd-8f46-7d844067ff5d" />
@@ -72,6 +72,98 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="4e6c15a5-7af8-4236-81de-3e32b4c61b57" name="Navigation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4531addd-904c-4a2e-98a2-5aa0d7276fa2" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="01f8aa12-07f6-4f81-be39-78abacc0dc7f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="df0c2e0d-c31c-4102-985e-105eec94bb12" />
+            <suppliersInternal>
+              <dependency Id="474f31b5-c6e0-4d67-9c29-28fca68d08e3">
+                <providedInterfaceMoniker Id="c59e1740-953a-470d-afdd-80faeec6c2ff" LastKnownName="Port1" />
+                <elementDefinition Id="48adb531-8a19-44b6-9998-6f28349b537e" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="013b7798-2527-4106-9a0e-533c4371f7c7" LastKnownName="INavigation" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="cd384049-a60e-425d-877f-214784cf51b6" name="FileSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1d8574df-43da-4556-bc31-4323057e33f2" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="a72470cb-e487-4177-82f1-9853acbb8605" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b0d53c9b-b278-44d0-9a13-021fa557538a" />
+            <suppliersInternal>
+              <dependency Id="d748ead7-a1ef-4563-aa0a-ba37893f1446">
+                <providedInterfaceMoniker Id="c59e1740-953a-470d-afdd-80faeec6c2ff" LastKnownName="Port1" />
+                <elementDefinition Id="6de1f555-9278-4c65-ba25-d3aea32028b9" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="863366fd-9111-410b-9da7-3ce80c29b060" LastKnownName="IFileSystem" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="dc37807b-6832-421b-a7ad-c7f3457cab2b" name="Model" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4525e98-3e41-459a-9831-00ec85973f34" />
+        <ownedAttributesInternal>
+          <providedInterface Id="c59e1740-953a-470d-afdd-80faeec6c2ff" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8bbf0fee-fdeb-4445-b135-886bc79b505a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="851922da-2402-409b-8098-19541da842a9" LastKnownName="IModel" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e5162009-1edf-4b1a-b1a7-6e7fa5a53733" name="SystemSave" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ebc3c020-b98a-46d3-b6f5-6fea12c0ed4b" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="288c44e8-6491-478d-b4d1-5ee116cc5b88" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a721266b-ce90-4f55-84a6-ca79d784b9fb" />
+            <suppliersInternal>
+              <dependency Id="bf24abb6-6b92-4c4c-81b3-9f95972deaf8">
+                <providedInterfaceMoniker Id="c59e1740-953a-470d-afdd-80faeec6c2ff" LastKnownName="Port1" />
+                <elementDefinition Id="ad637872-11dc-4cd6-bf42-12fb9f918dea" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="033fbada-da54-47db-83cd-3dbdf6bc06be" LastKnownName="ISystemSave" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="851922da-2402-409b-8098-19541da842a9" name="IModel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b61a333-3f8c-4f58-8e36-c572a8558ff6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="013b7798-2527-4106-9a0e-533c4371f7c7" name="INavigation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa9e7ffc-bb9e-4ffc-8c78-2cf7efa829ac" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="033fbada-da54-47db-83cd-3dbdf6bc06be" name="ISystemSave" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="215f7266-5069-4a5a-9389-c8b7f46f866a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="863366fd-9111-410b-9da7-3ce80c29b060" name="IFileSystem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e1f40a6-df5e-433c-bfed-fa74a208baa5" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
   <package Id="f3ad4280-6b07-45e2-9633-dd05fc5ed67d" name="ModelingDos">
     <elementDefinition Id="d6b0b841-5e44-4b26-a8e9-bf9ffb9437de" />
     <profileInstances>
