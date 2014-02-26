@@ -4,6 +4,7 @@
 using namespace std;
 int main()
 {
-	XMLManager manager(L"as");
-	manager.SaveAll(nullptr);
+	Bilder bilder(L"c:\\");
+	XMLManager xml(L"c:\\aa1.txt");
+	xml.SaveAll(bilder.Create());
 }

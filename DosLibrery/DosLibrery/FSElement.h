@@ -10,10 +10,11 @@ class FSElement
 	wstring mName;
 	FSElement *upFSElement;
 	bool isFolder;
+protected:
 	vector<FSElement*>filesSystem;
 public:
 	FSElement(const bool readOnly, bool isFolder, const wstring& name, FSElement *up)
-		:mReadOnly(readOnly), mName(name),upFSElement(up) {};
+		:mReadOnly(readOnly), mName(name), upFSElement(up) {};
 	
 	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
 	void SetName(const wstring& name){ mName = name; }
