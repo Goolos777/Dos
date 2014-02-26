@@ -7,8 +7,8 @@ class Folder :	public FSElement
 public:
 	Folder(bool readOnly, std::wstring name) : FSElement(readOnly, name){ std::vector<const FSElement*>filesSystem; };
 	
-	virtual void addFSElement(const FSElement& element);
-	virtual const FSElement* getFolder();
+	virtual void AddFSElement(const FSElement& element);
+	virtual const FSElement* GetFolder();
 
 	virtual ~Folder(){};
 };

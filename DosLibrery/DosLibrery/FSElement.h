@@ -12,20 +12,20 @@ public:
 	FSElement(const bool readOnly, const std::wstring& name, FSElement *up = nullptr)
 		:mReadOnly(readOnly), mName(name),upFSElement(up) {};
 	
-	void setReadOnly(const bool readOnly){ mReadOnly=readOnly; }
-	void setName(const std::wstring& name){ mName = name; }
-	void setExt(const std::wstring& ext);
-	void setSIZE(unsigned int size);
+	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
+	void SetName(const std::wstring& name){ mName = name; }
+	void SetExt(const std::wstring& ext);
+	void SetSIZE(unsigned int size);
 	
-	virtual void addFSElement(FSElement* element);
-	virtual const FSElement* getFolder();
-	void setUpFSElement(FSElement *up){ upFSElement = up; }
-	virtual const FSElement* getUpFSElement(){ return upFSElement; }
+	virtual void AddFSElement(FSElement* element);
+	virtual const FSElement* GetFolder();
+	void SetUpFSElement(FSElement *up){ upFSElement = up; }
+	virtual const FSElement* GetUpFSElement(){ return upFSElement; }
 
-	virtual bool getReadOnly(){ return mReadOnly; }
-	virtual const std::wstring& getName(){ return mName; }
-	virtual const std::wstring& getExt();
-	virtual const unsigned int getSIZE();
+	virtual bool GetReadOnly(){ return mReadOnly; }
+	virtual const std::wstring& GetName(){ return mName; }
+	virtual const std::wstring& GetExt();
+	virtual const unsigned int GetSIZE();
 	
 
 	virtual ~FSElement()=0;

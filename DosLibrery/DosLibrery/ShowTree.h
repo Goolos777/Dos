@@ -4,7 +4,7 @@ class ShowTree
 {
 public:
 	ShowTree();
-	void show(FSElement* element);
+	void Show(FSElement* element);
 	~ShowTree();
 };
 

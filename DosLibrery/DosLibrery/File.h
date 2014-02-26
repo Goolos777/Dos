@@ -9,11 +9,11 @@ public:
 	File(bool readOnly, std::wstring name, std::wstring ext, unsigned int SIZE) :
 								ext(ext), SIZE(SIZE), FSElement(readOnly,name){};
 
-	virtual void setExt(const std::wstring& ext){ this->ext = ext; }
-	virtual void setSIZE(unsigned int size){ SIZE = size; }
+	virtual void SetExt(const std::wstring& ext){ this->ext = ext; }
+	virtual void SetSIZE(unsigned int size){ SIZE = size; }
 
-	virtual  std::wstring& getExt(){ return ext; };
-	virtual const unsigned int getSIZE(){ return SIZE; };
+	virtual  std::wstring& GetExt(){ return ext; };
+	virtual const unsigned int GetSIZE(){ return SIZE; };
 
 	~File();
 };

@@ -5,7 +5,7 @@ class XMLManager
 public:
 	XMLManager();
 	FSElement* loadXML();
-	void saveAll(FSElement* root);
+	void SaveAll(FSElement* root);
 	~XMLManager();
 };
 

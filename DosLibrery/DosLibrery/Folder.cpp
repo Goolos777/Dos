@@ -1,7 +1,7 @@
 #include "Folder.h"
 #include "FSElement.h"
 
-void Folder::addFSElement(const FSElement& element)
+void Folder::AddFSElement(const FSElement& element)
 {
 	filesSystem.push_back(&element);
 }
