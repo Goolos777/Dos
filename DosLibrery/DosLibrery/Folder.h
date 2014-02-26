@@ -1,6 +1,8 @@
 #pragma once
 #include "FSElement.h"
 #include <string>
+
+
 class Folder :	public FSElement
 {
 	std::vector<const FSElement*>filesSystem;

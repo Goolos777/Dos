@@ -2,20 +2,20 @@
 
 #include <vector>
 #include <string>
-
+using namespace std;
 class FSElement
 {
 	bool mReadOnly;
-	std::wstring mName;
+	wstring mName;
 	FSElement *upFSElement;
 public:
-	FSElement(const bool readOnly, const std::wstring& name, FSElement *up = nullptr)
+	FSElement(const bool readOnly, const wstring& name, FSElement *up = nullptr)
 		:mReadOnly(readOnly), mName(name),upFSElement(up) {};
 	
 	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
-	void SetName(const std::wstring& name){ mName = name; }
-	void SetExt(const std::wstring& ext);
-	void SetSIZE(unsigned int size);
+	void SetName(const wstring& name){ mName = name; }
+	virtual void SetSIZE(long size);
+	
 	
 	virtual void AddFSElement(FSElement* element);
 	virtual const FSElement* GetFolder();
@@ -23,9 +23,8 @@ public:
 	virtual const FSElement* GetUpFSElement(){ return upFSElement; }
 
 	virtual bool GetReadOnly(){ return mReadOnly; }
-	virtual const std::wstring& GetName(){ return mName; }
-	virtual const std::wstring& GetExt();
-	virtual const unsigned int GetSIZE();
+	virtual const wstring& GetName(){ return mName; }
+	virtual const long& GetSIZE();
 	
 
 	virtual ~FSElement()=0;

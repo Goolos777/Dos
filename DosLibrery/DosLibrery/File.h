@@ -2,18 +2,14 @@
 #include "FSElement.h"
 class File : public FSElement
 {
-	std::wstring ext;
-	unsigned int SIZE;
-
+	long filesize;
 public:
-	File(bool readOnly, std::wstring name, std::wstring ext, unsigned int SIZE) :
-								ext(ext), SIZE(SIZE), FSElement(readOnly,name){};
+	File(bool readOnly, std::wstring name, long SIZE) :
+		filesize(SIZE), FSElement(readOnly, name){};
 
-	virtual void SetExt(const std::wstring& ext){ this->ext = ext; }
-	virtual void SetSIZE(unsigned int size){ SIZE = size; }
-
-	virtual  std::wstring& GetExt(){ return ext; };
-	virtual const unsigned int GetSIZE(){ return SIZE; };
+	
+	virtual void SetSIZE(long size){ filesize = size; }
+	virtual const long& GetSIZE() { return filesize; };
 
 	~File();
 };
