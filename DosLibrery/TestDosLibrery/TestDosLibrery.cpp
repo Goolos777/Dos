@@ -8,7 +8,7 @@ TEST(FactorialTest, HandlesZeroInput)
 {
 	wstring ws(L"C:\\");
 	Bilder bilder(ws);
-	//wstring wd(L"C:\\aa1.txt");
-	//XMLManager XMLsave(wd);
-	//XMLsave.SaveAll(bilder.Create());	
+	wstring wd(L"C:\\aa1.txt");
+	XMLManager XMLsave(wd);
+	XMLsave.SaveAll(bilder.Create());	
 }
