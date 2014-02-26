@@ -12,7 +12,6 @@ public:
 												{ std::vector<const FSElement*>filesSystem; };
 	virtual void AddFSElement(FSElement& element);
 	virtual vector<FSElement*>& GetFilesSystem(){ return filesSystem; }
-	virtual const wstring& Print();
 	virtual ~Folder(){};
 };
 
