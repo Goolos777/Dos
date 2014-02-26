@@ -1,11 +1,17 @@
+
 #pragma once
+#include <fstream>
+#include <iostream>
+#include <stdio.h>
+#include <string>
 #include "FSElement.h"
+using namespace std;
 class XMLManager
 {
+	wstring path;
 public:
-	XMLManager();
-	FSElement* loadXML();
+	XMLManager(wstring path) : path(path){};
 	void SaveAll(FSElement* root);
-	~XMLManager();
+	~XMLManager(){};
 };
 

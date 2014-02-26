@@ -28,7 +28,7 @@ public:
 	virtual bool GetReadOnly(){ return mReadOnly; }
 	virtual const wstring& GetName(){ return mName; }
 	virtual const long& GetSIZE() = 0;
-	
+	const wstring& Print(){	return mName;	}
 
 	virtual ~FSElement(){};
 };

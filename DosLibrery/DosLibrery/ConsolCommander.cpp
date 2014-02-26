@@ -2,7 +2,3 @@
 
 
 
-
-ConsolCommander::~ConsolCommander()
-{
-}

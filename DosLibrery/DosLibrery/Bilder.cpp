@@ -11,6 +11,7 @@ void Bilder::createTree(FSElement* element)
 {
 	WIN32_FIND_DATA ffd;
 	LARGE_INTEGER filesize;
+	LPCTSTR t = element->GetName().c_str();
 	HANDLE hFind = FindFirstFile(element->GetName().c_str(), &ffd);
 	do
 	{
