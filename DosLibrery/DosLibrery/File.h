@@ -11,6 +11,6 @@ public:
 	virtual void SetSIZE(long size){ filesize = size; }
 	virtual const long& GetSIZE() { return filesize; };
 
-	~File();
+	virtual ~File(){};
 };
 
