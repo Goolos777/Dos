@@ -15,11 +15,9 @@ protected:
 public:
 	FSElement(const bool readOnly, bool isFolder, const wstring& name, FSElement *up)
 		:mReadOnly(readOnly), mName(name), upFSElement(up) {};
-	
 	void SetReadOnly(const bool readOnly){ mReadOnly=readOnly; }
 	void SetName(const wstring& name){ mName = name; }
 	virtual void SetSIZE(long size){};
-	
 	
 	virtual void AddFSElement(FSElement* element){ filesSystem.push_back(element); }
 	virtual vector<FSElement*>& GetFilesSystem(){ return filesSystem; };
@@ -29,7 +27,7 @@ public:
 	virtual bool GetReadOnly(){ return mReadOnly; }
 	virtual const wstring& GetName(){ return mName; }
 	virtual const long& GetSIZE() = 0;
-	const wstring& Print(){	return mName;	}
+	const wstring Print(){	return mName;	}
 
 	virtual ~FSElement(){};
 };
