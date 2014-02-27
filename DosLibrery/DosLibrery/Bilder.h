@@ -14,7 +14,7 @@ class Bilder
 	void createTree(FSElement* element);
 	void deleteTree(FSElement* element);
 public:
-	Bilder(wstring path);
+	Bilder();
 	FSElement* Create(){return root;}
 	~Bilder();
 };

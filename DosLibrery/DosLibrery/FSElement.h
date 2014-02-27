@@ -21,7 +21,7 @@ public:
 	virtual void SetSIZE(long size){};
 	
 	
-	virtual void AddFSElement(FSElement* element){};
+	virtual void AddFSElement(FSElement* element){ filesSystem.push_back(element); }
 	virtual vector<FSElement*>& GetFilesSystem(){ return filesSystem; };
 	void SetUpFSElement(FSElement *up){ upFSElement = up; }
 	virtual const FSElement* GetUpFSElement(){ return upFSElement; }
