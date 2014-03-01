@@ -39,9 +39,6 @@
     <ClInclude Include="Folder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IMXLParserResiver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FSElement.cpp">
@@ -60,12 +57,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Folder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IMXLParserResiver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

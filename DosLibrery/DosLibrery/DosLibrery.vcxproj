@@ -81,7 +81,6 @@
     <ClInclude Include="File.h" />
     <ClInclude Include="Folder.h" />
     <ClInclude Include="FSElement.h" />
-    <ClInclude Include="IMXLParserResiver.h" />
     <ClInclude Include="ShowTree.h" />
     <ClInclude Include="XMLManager.h" />
   </ItemGroup>
@@ -90,9 +89,7 @@
     <ClCompile Include="ConsolCommander.cpp" />
     <ClCompile Include="Folder.cpp" />
     <ClCompile Include="FSElement.cpp" />
-    <ClCompile Include="IMXLParserResiver.cpp" />
     <ClCompile Include="ShowTree.cpp" />
-    <ClCompile Include="Source.cpp" />
     <ClCompile Include="XMLManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
