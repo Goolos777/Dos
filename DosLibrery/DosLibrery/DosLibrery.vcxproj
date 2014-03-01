@@ -89,7 +89,6 @@
     <ClCompile Include="Bilder.cpp" />
     <ClCompile Include="ConsolCommander.cpp" />
     <ClCompile Include="Folder.cpp" />
-    <ClCompile Include="FSElement.cpp" />
     <ClCompile Include="IMXLParserResiver.cpp" />
     <ClCompile Include="ShowTree.cpp" />
     <ClCompile Include="Source.cpp" />

@@ -13,8 +13,7 @@ ConsolCommander::ConsolCommander()
 	_tprintf(TEXT("\nTarget directory is %s\n\n"), a);
 	StringCchCopy(szDir, MAX_PATH, a);
 	StringCchCat(szDir, MAX_PATH, TEXT("\\aa1.txt"));
-
-	Bilder bilder;
+	Bilde bilder;
 	XMLManager  manager(a);
 	manager.SaveAll(bilder.Create());
 }

@@ -13,9 +13,9 @@ void XMLManager::SaveAll(FSElement* root)
 		f.open("c:\\M.txt");
 		f.write((char*)temp->Print().c_str(), temp->Print().size());
 	
-		if (temp->GetisFolder())
+		if (temp->GetSIZE() == -1)
 		{
-			//SaveAll(temp);
+			SaveAll(temp);
 		}
 	}
 	f.close();

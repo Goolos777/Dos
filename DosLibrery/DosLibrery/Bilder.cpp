@@ -1,14 +1,14 @@
 #include "Bilder.h"
 
 
-Bilder::Bilder()
+Bilde::Bilde()
 {
 	wstring path = L"c:\\*";
-	root = new Folder(false,true, path, nullptr);
+	root = new Folder(false, path,-1, nullptr);
 	createTree(root);
 }
 
-void Bilder::createTree(FSElement* element)
+void Bilde::createTree(FSElement* element)
 {
 	WIN32_FIND_DATA ffd;
 	LARGE_INTEGER filesize;
@@ -19,34 +19,30 @@ void Bilder::createTree(FSElement* element)
 		FSElement *el;
 		if (ffd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 		{	
-			el = new Folder(ffd.dwFileAttributes & FILE_ATTRIBUTE_READONLY,
-							ffd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY,
-							ffd.cFileName, element);
+			el = new Folder(ffd.dwFileAttributes & FILE_ATTRIBUTE_READONLY,	ffd.cFileName,-1, element);
 			createTree(el);
 		}
 		else
 		{
 			long SIZE = ffd.nFileSizeLow + ffd.nFileSizeHigh;
-			el = new File(ffd.dwFileAttributes & FILE_ATTRIBUTE_READONLY, 
-							ffd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY, 
-							ffd.cFileName, SIZE, element);
+			el = new File(ffd.dwFileAttributes & FILE_ATTRIBUTE_READONLY, ffd.cFileName, SIZE, element);
 		}
 		element->AddFSElement(el);
 		
 	} while (FindNextFile(hFind, &ffd) != 0);
 	FindClose(hFind);
 }
-void Bilder::deleteTree(FSElement* element)
+void Bilde::deleteTree(FSElement* element)
 {
 	for (FSElement *temp : element->GetFilesSystem())
 	{
-		if (temp->GetisFolder())deleteTree(temp);
+		if (temp->GetSIZE() == -1)deleteTree(temp);
 		delete temp;
 	}
 	delete element;
 }
 
-Bilder::~Bilder()
+Bilde::~Bilde()
 {
 	deleteTree(root);
 }

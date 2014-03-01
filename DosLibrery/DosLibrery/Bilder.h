@@ -8,14 +8,14 @@
 #include "Folder.h"
 #include "File.h"
 
-class Bilder
+class Bilde
 {
 	FSElement* root;
 	void createTree(FSElement* element);
 	void deleteTree(FSElement* element);
 public:
-	Bilder();
+	Bilde();
 	FSElement* Create(){return root;}
-	~Bilder();
+	~Bilde();
 };
 
