@@ -1,8 +1,9 @@
 #include "Bilder.h"
 
 
-Bilder::Bilder(wstring path)
+Bilder::Bilder()
 {
+	wstring path = L"c:\\*";
 	root = new Folder(false,true, path, nullptr);
 	createTree(root);
 }
@@ -33,7 +34,7 @@ void Bilder::createTree(FSElement* element)
 		element->AddFSElement(el);
 		
 	} while (FindNextFile(hFind, &ffd) != 0);
-
+	FindClose(hFind);
 }
 void Bilder::deleteTree(FSElement* element)
 {
@@ -49,5 +50,3 @@ Bilder::~Bilder()
 {
 	deleteTree(root);
 }
-
-

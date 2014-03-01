@@ -9,9 +9,16 @@ using namespace std;
 class XMLManager
 {
 	wstring path;
+
 public:
-	XMLManager(wstring path) : path(path){};
+
+	XMLManager(wstring path);
+
 	void SaveAll(FSElement* root);
-	~XMLManager(){};
+
+	~XMLManager();
+
 };
+
+
 

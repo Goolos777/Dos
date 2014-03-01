@@ -7,14 +7,20 @@ using namespace std;
 class Folder :	public FSElement
 {
 	long tmp = 0;
+
 	vector<FSElement*>filesSystem;
+
 public:
-	Folder(bool readOnly, bool isFolder, std::wstring name, FSElement *up) : FSElement(readOnly, isFolder, name, up)
-												{ std::vector<const FSElement*>filesSystem; };
+
+	Folder(bool readOnly, bool isFolder, std::wstring name, FSElement *up);
+
 	virtual void AddFSElement(FSElement& element);
-	virtual vector<FSElement*>& GetFilesSystem(){ return filesSystem; }
-	virtual const long& GetSIZE(){ return tmp; }
-	virtual ~Folder(){};
+
+	virtual vector<FSElement*>& GetFilesSystem();
+
+	virtual const long& GetSIZE();
+
+	virtual ~Folder();
 };
 
 

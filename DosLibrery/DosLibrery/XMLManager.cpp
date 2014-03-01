@@ -3,12 +3,6 @@
 
 void XMLManager::SaveAll(FSElement* root)
 {
-
-
-
-
-
-
 	ofstream myfile;// переменная класса ofstream 
 
 	char * buffer;// символьный указатель
@@ -23,28 +17,15 @@ void XMLManager::SaveAll(FSElement* root)
 
 	}
 	myfile.close();
-	
+}
 
+XMLManager::XMLManager(wstring path) : path(path)
+{
 
+}
 
+XMLManager::~XMLManager()
+{
 
-
-
-
-
-
-	//fstream f;
-	//f.open("c:\\M.txt");
-
-	//f.open(path.c_str());
-	//for (FSElement *temp : root->GetFilesSystem())
-	//{
-	//	f.write((char*)temp->Print().c_str(), temp->Print().length());
-	//
-	//	if (temp->GetisFolder())
-	//	{
-	//		//SaveAll(temp);
-	//	}
-	//}
 }
 

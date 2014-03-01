@@ -3,8 +3,11 @@
 class ShowTree
 {
 public:
+
 	ShowTree();
+
 	void Show(FSElement* element);
+
 	~ShowTree();
 };
 

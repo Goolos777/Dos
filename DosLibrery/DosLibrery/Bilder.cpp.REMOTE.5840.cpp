@@ -49,5 +49,3 @@ Bilder::~Bilder()
 {
 	deleteTree(root);
 }
-
-

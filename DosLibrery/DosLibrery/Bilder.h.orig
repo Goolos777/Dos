@@ -8,20 +8,18 @@
 #include "Folder.h"
 #include "File.h"
 
-class Bilder
+class Bilde
 {
 	FSElement* root;
-
 	void createTree(FSElement* element);
-
 	void deleteTree(FSElement* element);
-
 public:
-
+<<<<<<< HEAD
+	Bilde();
+=======
 	Bilder(wstring path);
-
+>>>>>>> parent of 7dfcee7... капец
 	FSElement* Create(){return root;}
-
-	~Bilder();
+	~Bilde();
 };
 
