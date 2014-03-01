@@ -1,11 +1,10 @@
 #include "gtest/gtest.h"
 #include <string>
-#include "XMLManager.h"
-#include "Bilder.h"
+#include "ConsolCommander.h"
 using namespace std;
 
-TEST(XMLManager, testSaveAll)
+
+TEST(FactorialTest, HandlesZeroInput)
 {
-	XMLManager manager(L"as");
-	manager.SaveAll(nullptr);
+	ConsolCommander commander();
 }

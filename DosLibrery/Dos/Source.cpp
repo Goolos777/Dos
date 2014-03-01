@@ -1,9 +1,9 @@
 #include <string>
 #include "XMLManager.h"
 #include "Bilder.h"
+#include <iostream>
 using namespace std;
 int main()
 {
-	XMLManager manager(L"as");
-	manager.SaveAll(nullptr);
+	std::cout << "hello\n";
 }
